@@ -27,10 +27,10 @@ class _CartScreenState extends State<CartScreen> {
               height: 85,
               width: double.infinity,
               decoration: BoxDecoration(
-                color: CupertinoColors.black.withOpacity(0.1),
+                color: CupertinoColors.black,
                 border: Border(
                   bottom: BorderSide(
-                    color: CupertinoColors.black.withOpacity(0.1),
+                    color: CupertinoColors.black,
                     width: 1,
                   ),
                 ),
@@ -44,7 +44,7 @@ class _CartScreenState extends State<CartScreen> {
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
-                      color: CupertinoColors.black.withOpacity(0.85),
+                      color: CupertinoColors.white,
                       letterSpacing: 0.5,
                     ),
                   ),
@@ -175,6 +175,7 @@ class _CartScreenState extends State<CartScreen> {
                             Padding(
                               padding: EdgeInsets.all(5),
                               child: Container(
+                                child: Image.asset("assets/img/1.jpeg"),
                                 height: 50,
                                 width: 40,
                                 decoration: BoxDecoration(
@@ -232,6 +233,7 @@ class _CartScreenState extends State<CartScreen> {
                             Padding(
                               padding: EdgeInsets.all(5),
                               child: Container(
+                                child: Image.asset("assets/img/2.jpeg"),
                                 height: 50,
                                 width: 40,
                                 decoration: BoxDecoration(
@@ -248,7 +250,7 @@ class _CartScreenState extends State<CartScreen> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  "Garden strand",
+                                  "car",
                                   style: TextStyle(
                                     fontSize: 15,
                                   ),

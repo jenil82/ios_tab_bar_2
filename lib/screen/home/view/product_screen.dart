@@ -45,7 +45,7 @@ class _ProductScreenState extends State<ProductScreen> {
             ),
             Expanded(
               child: ListView.builder(
-                itemCount: 10,
+                itemCount: 200,
                 itemBuilder: (context, index) {
                   return productUI();
                 },
@@ -67,6 +67,7 @@ class _ProductScreenState extends State<ProductScreen> {
           Padding(
             padding: EdgeInsets.all(10),
             child: Container(
+              child: Image.asset("assets/img/1.jpeg"),
               height: 80,
               width: 65,
               decoration: BoxDecoration(
@@ -78,7 +79,7 @@ class _ProductScreenState extends State<ProductScreen> {
           Expanded(
             child: Padding(
               padding: EdgeInsets.only(
-                right: 15,
+                right: 20,
               ),
               child: Container(
                 height: double.infinity,
@@ -98,7 +99,7 @@ class _ProductScreenState extends State<ProductScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "vagabond sack",
+                          "car",
                           style: TextStyle(
                             fontSize: 17,
                           ),
@@ -107,7 +108,7 @@ class _ProductScreenState extends State<ProductScreen> {
                           height: 5,
                         ),
                         Text(
-                          "\$120",
+                          "\$50,000000",
                           style: TextStyle(
                             fontSize: 11,
                             color: CupertinoColors.black.withOpacity(0.5),
@@ -119,6 +120,7 @@ class _ProductScreenState extends State<ProductScreen> {
                     Icon(
                       CupertinoIcons.add_circled,
                       size: 21,
+                      color: CupertinoColors.black,
                     ),
                   ],
                 ),

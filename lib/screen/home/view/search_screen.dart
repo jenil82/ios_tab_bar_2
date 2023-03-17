@@ -25,7 +25,7 @@ class _SearchScreenState extends State<SearchScreen> {
                 width: double.infinity,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: CupertinoColors.black.withOpacity(0.1),
+                  color: CupertinoColors.black,
                 ),
                 child: Row(
                   children: [
@@ -33,19 +33,16 @@ class _SearchScreenState extends State<SearchScreen> {
                       padding: EdgeInsets.all(8),
                       child: Icon(
                         CupertinoIcons.search,
-                        color: CupertinoColors.black.withOpacity(0.2),
+                        color: CupertinoColors.white,
                         size: 24,
                       ),
-                    ),
-                    Text(
-                      "shirt",
                     ),
                     Spacer(),
                     Padding(
                       padding: EdgeInsets.all(8),
                       child: Icon(
                         CupertinoIcons.clear_circled_solid,
-                        color: CupertinoColors.black.withOpacity(0.3),
+                        color: CupertinoColors.white,
                         size: 22,
                       ),
                     ),
@@ -77,6 +74,7 @@ class _SearchScreenState extends State<SearchScreen> {
           Padding(
             padding: EdgeInsets.all(10),
             child: Container(
+              child: Image.asset("assets/img/2.jpeg"),
               height: 80,
               width: 65,
               decoration: BoxDecoration(
@@ -108,7 +106,7 @@ class _SearchScreenState extends State<SearchScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "vagabond sack",
+                          "car",
                           style: TextStyle(
                             fontSize: 17,
                           ),
@@ -117,7 +115,7 @@ class _SearchScreenState extends State<SearchScreen> {
                           height: 5,
                         ),
                         Text(
-                          "\$120",
+                          "\$1,000000",
                           style: TextStyle(
                             fontSize: 11,
                             color: CupertinoColors.black.withOpacity(0.5),
@@ -128,6 +126,7 @@ class _SearchScreenState extends State<SearchScreen> {
                     Spacer(),
                     Icon(
                       CupertinoIcons.add_circled,
+                      color: CupertinoColors.black,
                       size: 21,
                     ),
                   ],
